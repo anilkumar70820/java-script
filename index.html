@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+    <!-- <script>
+        // console.log('hello word')
+        // // let string=("any text")
+        // // let dataBase = [string ,true]
+        let dataBasetwo = {
+            name: "anil",
+            Number: 201,
+            value: true,
+        }
+        console.log(dataBasetwo)
+        function multiplyNumber(PARM1, PARM2) {
+            let a = PARM1 * PARM2;
+            return a;
+        }
+        let c = multiplyNumber(93, 37);
+        console.log(c)
+        function sumNumber(add1, add2) {
+            let b = add1 + add2;
+            return b;
+        }
+        let f = sumNumber(34, 25);
+        console.log(f)
+
+        function subtractNumber(subtract1, subtract2) {
+            let c = subtract1 - subtract2;
+            return c;
+        }
+        let g = subtractNumber(34, 25);
+        console.log(g)
+        function divideNumber(divide1, divide2) {
+            let e = divide1 / divide2;
+            return e;
+        }
+        let d = divideNumber(34, 25);
+
+    </script> -->
+    <!-- <script>
+        console.log(a)
+        var a = "hello"
+
+
+        let g = subtractNumber(34, 25);
+        console.log(g)
+        function subtractNumber(subtract1, subtract2) {
+            let c = subtract1 - subtract2;
+            return c;
+        }
+
+    </script> -->
+    <!-- <script>
+        function xyz() {
+            let x = 10;
+            if (true) {
+                let x = 20;
+                console.log(x);
+            }
+            console.log(x);
+        }
+        xyz()
+    </script> -->
+    <script>
+        var b = 100;
+        if (b > 500) {
+            console.log(b < 500)
+            console.log(b)
+        } else {
+            console.log(b > 500)
+        }
+    </script>
+    <script>
+        const a = 10
+        if (a < 0) {
+        console.log("this is true")    
+        } else if (a < 0) {
+            console.log("this is false")    
+        } else if (a < 0) {
+            console.log("nothing")    
+        } else{
+            console.log("anil")
+        }
+    </script>
+    <!-- <script>
+        let text = "";
+        let i = 0;
+        do {
+          text += i + "<br>";
+          i++;
+        }
+        while (i < 5);
+        document.getElementById("demo").innerHTML = text;
+        </script> -->
+        <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
