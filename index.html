@@ -6,39 +6,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        /* ================progreesbar============ */
+        .windowscrollcolor {
+            background-color: red;
+            height: 10px;
+            width: 100%;
+        }
+
+        .windowscroll {
+            background-color: #fff;
+            height: 10px;
+            width: 100%;
+
+        }
+
+        .header {
+            position: fixed !important;
+            top: 0% !important;
+            left: 0% !important;
+            width: 100% !important;
+            border-radius: 20px;
+            z-index: 99;
+        }
+
+        ::-webkit-scrollbar {
+            background-color: white !important;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: black !important;
+            border-radius: 10px;
+        }
+
+
+
+
+        /* ================progreesbar end============ */
+    </style>
 </head>
 
 <body>
-    <h2>JavaScript switch</h2>
+    <!-- =============date 14/10/23============ -->
+    <form>
+        <input type="number" id="square" class="p-3" placeholder="get your square" />
+        <button type="submit" class="p-2 px-3 my-3 bg-black text-white fw-bold fs-2 rounded-2">Submit</button>
+    </form>
+    <p id="result"></p>
+    
+    <!-- =============date 14/10/23 end============ -->
+    
+    <section>
+        <div class="header">
+            <div class="windowscroll">
+                <div class="windowscrollcolor" id="scrollPage"></div>
+            </div>
+        </div>
+    </section>
+    <a href="https://play.google.com/store/apps/details?id=com.iabuzz.minigames.dino&hl=en_IE&pli=1">jkksfdkj</a>
+    <button style="margin-left: 50px; margin-bottom: 50px;" class="send_btn fs-1">Send Me</button>
+    <div class="box-1">
+        <div class="box"></div>
+    </div>
+    <div id="demo1">hi</div>
+    <p id="demo"></p>
+    <div class="flex-center">
+        <h1 class="selector">queryselector</h1>
+    </div>
+    <div class="flex-center">
+        <h3 class="hi">anil kumar</h3>
+        <h3 class="hi">anil kumar</h3>
+        <h3 class="hi">anil kumar</h3>
+        <h3 class="hi">anil kumar</h3>
+        <h3 class="hi">anil kumar</h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- =========progressbar======== -->
+    <script>
+        window.onscroll = function () {
+            myFunction();
+        };
+        function myFunction() {
+            let winScroll =
+                document.body.scrollTop || document.documentElement.scrollTop;
+            let height =
+                document.documentElement.scrollHeight -
+                document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("scrollPage").style.width = scrolled + "%";
+        }
+    </script>
+    <!-- =========progressbar======== -->
+    <!-- querySelector========= -->
+    <script>
+        const flex = document.querySelector(".flex-center")
+        flex.forEach((e) => {
+            e.style.display = "flex"
+            e.style.justifyContent = "center"
+            e.style.alignItems = "center"
+            e.style.flexDirection = "column"
+        })
+        const anil = document.querySelector('.selector')
+        anil.style.color = 'white'
+        anil.style.marginTop = "100px"
+        anil.style.marginBottom = "100px"
+        anil.style.backgroundColor = 'black'
+        anil.style.textAlign = 'center'
+        anil.style.fontSize = '50px'
+        anil.style.transform = 'rotate(4deg)'
+        anil.style.display = "inline-block"
+        anil.style.paddingTop = "10px"
+        anil.style.paddingBottom = "10px"
+        anil.style.paddingLeft = "200px"
+        anil.style.paddingRight = "200px"
 
-<p id="demo"></p>
+        // ========QueryselectorAll================
 
-<script>
-let day;
-switch (new Date().getDay()) {
-  case 0:
-    day = "Sunday";
-    break;
-  case 1:
-    day = "Monday";
-    break;
-  case 2:
-    day = "Tuesday";
-    break;
-  case 3:
-    day = "Wednesday";
-    break;
-  case 4:
-    day = "Thursday";
-    break;
-  case 5:
-    day = "Friday";
-    break;
-  case  6:
-    day = "Saturday";
-}
-document.getElementById("demo").innerHTML = "Today is " + day;
-</script>
+        const me = document.querySelectorAll('h3')
+        me.forEach((h3) => {
+            h3.style.textAlign = "center"
+            h3.style.color = 'white'
+            h3.style.backgroundColor = 'blue'
+            h3.style.textAlign = 'center'
+            h3.style.fontSize = '50px'
+            h3.style.transform = 'rotate(4deg)'
+            h3.style.display = "inline-block"
+            h3.style.paddingTop = "10px"
+            h3.style.paddingBottom = "10px"
+            h3.style.paddingLeft = "50px"
+            h3.style.paddingRight = "50px"
+            h3.style.marginBottom = "0"
+        });
+        console.log(me)
+
+        // ========QueryselectorAll end================
+
+        const test = document.querySelector('.box-1')
+        test.classList.add("d-flex", 'justify-content-center')
+        const center = document.querySelector("#demo1")
+        center.classList.add('text-center', 'fs-1')
+    </script>
+    <!-- =========querySelector End ================= -->
+    <script>
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("demo").innerHTML = "Today is" + day;
+    </script>
 
     <!-- <script>
         // console.log('hello word')
@@ -112,26 +252,17 @@ document.getElementById("demo").innerHTML = "Today is " + day;
     <script>
         const a = 10
         if (a < 0) {
-        console.log("this is true")    
+            console.log("this is true")
         } else if (a < 0) {
-            console.log("this is false")    
+            console.log("this is false")
         } else if (a < 0) {
-            console.log("nothing")    
-        } else{
+            console.log("nothing")
+        } else {
             console.log("anil")
         }
     </script>
-    <!-- <script>
-        let text = "";
-        let i = 0;
-        do {
-          text += i + "<br>";
-          i++;
-        }
-        while (i < 5);
-        document.getElementById("demo").innerHTML = text;
-        </script> -->
-        <script src="/assets/js/index.js"></script>
+
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>
