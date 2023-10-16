@@ -220,7 +220,8 @@ abc([3, 4, 5, 6, -7, -10, 5]);
 // ==========map in array ==============
 const power = [2, 3, 4, 5, 6,]
 const result = power.map((x) => x ** 3)
-console.log(result)
+// console.log(result)
+document.getElementById("cube").innerHTML=result
 
 // ==========map in array end ==============
 // ==========find cube of a number===========
