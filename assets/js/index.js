@@ -180,36 +180,36 @@ console.log(red1)
 
 // ========================Date 13/10/23===========================
 
-// function abc(n) {
-//     value1 = n[0]
-//     value2 = n[1]
-//     let first = n[0] * n[1]
-//     for (let g = 1; g < n.length - 1; g++) {
-//         let sum = n[g] * n[g +1]
-//         if (sum > first) {
-//             first = sum
-//             value1 = n[g]
-//             value2 = n[g + 1]
-//         }
-//     }
-//     console.log(value1,value2,first)
-// }
-// abc([3, 4, 5, 6, -7, -10, 5]);
 function abc(n) {
     value1 = n[0]
     value2 = n[1]
-    let first = n[0] / n[1]
+    let first = n[0] * n[1]
     for (let g = 1; g < n.length - 1; g++) {
-        let sum = n[g] / n[g + 1]
+        let sum = n[g] * n[g +1]
         if (sum > first) {
             first = sum
             value1 = n[g]
             value2 = n[g + 1]
         }
-        console.log(sum)
     }
+    console.log(value1,value2,first)
 }
 abc([3, 4, 5, 6, -7, -10, 5]);
+// function abc(n) {
+//     value1 = n[0]
+//     value2 = n[1]
+//     let first = n[0] / n[1]
+//     for (let g = 1; g < n.length - 1; g++) {
+//         let sum = n[g] / n[g + 1]
+//         if (sum > first) {
+//             first = sum
+//             value1 = n[g]
+//             value2 = n[g + 1]
+//         }
+//         console.log(sum)
+//     }
+// }
+// abc([3, 4, 5, 6, -7, -10, 5]);
 // console.log(abc)
 
 
