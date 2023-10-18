@@ -200,7 +200,7 @@ function abc(n) {
     value2 = n[1]
     let first = n[0] / n[1]
     for (let g = 1; g < n.length - 1; g++) {
-        let sum = n[g] / n[g +1]
+        let sum = n[g] / n[g + 1]
         if (sum > first) {
             first = sum
             value1 = n[g]
@@ -221,7 +221,7 @@ abc([3, 4, 5, 6, -7, -10, 5]);
 const power = [2, 3, 4, 5, 6,]
 const result = power.map((x) => x ** 3)
 // console.log(result)
-document.getElementById("cube").innerHTML=result
+document.getElementById("cube").innerHTML = result
 
 // ==========map in array end ==============
 // ==========find cube of a number===========
@@ -235,8 +235,28 @@ form.addEventListener('submit', function (e) {
 })
 // ==========find cube of a number end===========
 
+// ================16/10/23======================
 
+function abc3(start, end) {
+    for (let i = start; i <= end; i++) {
+        const cube = i * i * i;
+        console.log(i + "*" + i + "*" + i + "=" + cube);
+    }
+}
 
+abc3(3, 6);
 
+// ================16/10/23======================
+// ================17/10/23======================
 
+function cube(x, y) {
+    let r = 1
+    for (let i = 1; i <= y; i++) {
+        let v = r * x;
+        v = r
+        console.log(r)
+    }   
+}
+cube(3, 5)
+// ================17/10/23======================
 // ======================================================
