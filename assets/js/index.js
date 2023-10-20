@@ -7,62 +7,62 @@
 // =============Promt end===============
 // =======Right Click function Off=============
 
-document.addEventListener('contextmenu', (e) => e.preventDefault());
+// document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-function ctrlShiftKey(e, keyCode) {
-    return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-}
+// function ctrlShiftKey(e, keyCode) {
+//     return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+// }
 
-// =============Right Click Function off================
+// // =============Right Click Function off================
 
-// ==============inspect all function disabled===============
-document.onkeydown = (e) => {
-    // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-    if (
-        event.keyCode === 123 ||
-        // ctrlShiftKey(e, 'I') ||
-        ctrlShiftKey(e, 'J') ||
-        ctrlShiftKey(e, 'C') ||
-        (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-    )
-        return false;
-};
-// ==============inspect all function disabled End===============
+// // ==============inspect all function disabled===============
+// document.onkeydown = (e) => {
+//     // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+//     if (
+//         event.keyCode === 123 ||
+//         // ctrlShiftKey(e, 'I') ||
+//         ctrlShiftKey(e, 'J') ||
+//         ctrlShiftKey(e, 'C') ||
+//         (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+//     )
+//         return false;
+// };
+// // ==============inspect all function disabled End===============
 
-// for loop
-const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// // for loop
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 
-let text = "";
-for (let i = 0; i < cars.length; i++) {
-    text += cars[i] + "<br>";
-}
-document.write(text + "<br>")
+// let text = "";
+// for (let i = 0; i < cars.length; i++) {
+//     text += cars[i] + "<br>";
+// }
+// document.write(text + "<br>")
 
 
-// 2nd example
+// // 2nd example
 
-const car = ["BMW", "Volvo", "Saab", "Ford"];
-let z = 2;
-let len = car.length;
-let mycar = "";
+// const car = ["BMW", "Volvo", "Saab", "Ford"];
+// let z = 2;
+// let len = car.length;
+// let mycar = "";
 
-for (; z < len; z++) {
-    mycar += car[z] + "<br>";
-}
-document.write(mycar)
+// for (; z < len; z++) {
+//     mycar += car[z] + "<br>";
+// }
+// document.write(mycar)
 
 // for loop end
 
 // while loop
-document.write("<br>")
-let number = "";
-let x = 0;
-while (x < 10) {
-    number += "The number is " + x + "<br>";
-    x++;
+// document.write("<br>")
+// let number = "";
+// let x = 0;
+// while (x < 10) {
+//     number += "The number is " + x + "<br>";
+//     x++;
 
-}
-document.write(number)
+// }
+// document.write(number)
 
 // while loop end
 
@@ -70,27 +70,27 @@ document.write(number)
 
 // do while loop 
 // first example
-document.write("<br>")
-let c = "";
-let d = 0;
-do {
-    c += d + "<br>";
-    d++;
-}
-while (d < -1);
-document.write(c)
+// document.write("<br>")
+// let c = "";
+// let d = 0;
+// do {
+//     c += d + "<br>";
+//     d++;
+// }
+// while (d < -1);
+// document.write(c)
 
 
 // second example
-let e = ""
-let f = 0;
+// let e = ""
+// let f = 0;
 
-do {
-    e += "<br/  >The number is " + f;
-    f++;
-}
-while (f < 10);
-document.write(e)
+// do {
+//     e += "<br/  >The number is " + f;
+//     f++;
+// }
+// while (f < 10);
+// document.write(e)
 // do while loop end
 
 // ========this keyword========
@@ -169,9 +169,9 @@ console.log(car2.age())
 // ==============Constructor End==================
 
 // ==========array prototype reduce=========
-const red = [1, 2, 3, 4, 5]
-const red1 = red.reduce((a, b, c, d) => a + b + c + d)
-console.log(red1)
+// const red = [1, 2, 3, 4, 5]
+// const red1 = red.reduce((a, b, c, d) => a + b + c + d)
+// console.log(red1)
 
 
 // ==========array prototype reduce end=========
@@ -185,14 +185,14 @@ function abc(n) {
     value2 = n[1]
     let first = n[0] * n[1]
     for (let g = 1; g < n.length - 1; g++) {
-        let sum = n[g] * n[g +1]
+        let sum = n[g] * n[g + 1]
         if (sum > first) {
             first = sum
             value1 = n[g]
             value2 = n[g + 1]
         }
     }
-    console.log(value1,value2,first)
+    console.log(value1, value2, first)
 }
 abc([3, 4, 5, 6, -7, -10, 5]);
 // function abc(n) {
@@ -249,14 +249,89 @@ abc3(3, 6);
 // ================16/10/23======================
 // ================17/10/23======================
 
-function cube(x, y) {
-    let r = 1
-    for (let i = 1; i <= y; i++) {
-        let v = r * x;
-        v = r
-        console.log(r)
-    }   
-}
-cube(3, 5)
+// function cube(x, y) {
+//     let r = 1
+//     for (let i = 1; i <= y; i++) {
+//         let v = r * x;
+//         v = r
+//         console.log(r)
+//     }   
+// }
+// cube(3, 5)
 // ================17/10/23======================
 // ======================================================
+
+// ============19/10/23============
+// function vowl(x){
+
+//     if(x==a){
+//         console.log("this is a vowel")
+//     }else if(x==e){
+//         console.log("this is a vowel")
+//     }else if(x==i){
+//         console.log("this is a vowel")
+//     }else if(x==o){
+//         console.log("this is a vowel")
+//     }else if(x==u){
+//         console.log("this is a vowel")
+//     }else{
+//         console.log("this is a consonents")
+//     }
+// }
+// vowl(b)
+
+
+// ============19/10/23============
+function vowels(n) {
+    let vowel = ["a", "e", "i", "o", "u"]
+    for (let z = 0; z < vowel.length; z++) {
+        if (vowel[z] === n) {
+            console.log("this is a vowel")
+        } else {
+            console.log("this is a consonent")
+        }
+    }
+}
+vowels("a")
+// ==============================
+function findvowel(n) {
+    let findv = ["a", "e", "i", "o", "u"]
+
+    for (let x = 0; x < n.length; x++) {
+        if (findv[x] === n.length) {
+
+        }
+    }
+
+}
+findvowel("umberlla");
+// =================find centuery==================
+function centuery(year) {
+    let c = 1
+    for (s = 100; s <= year; s += 100) {
+        c++
+    }
+    console.log(c)
+}
+centuery(5767);
+// =========================
+// ================find series number==============
+function series(number) {
+    let table = 1
+    for (let s = 0; s <= number; s++) {
+        let output = s * 4
+        table += output
+        console.log(table)
+    }
+}
+series(5);
+// ==============table==========
+
+function table(n){
+    for(let t=1 ;t<=10;t++){
+        let get=t*n
+        
+        console.log(get)
+    }
+}
+table(5)
